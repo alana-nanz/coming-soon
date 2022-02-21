@@ -8,12 +8,20 @@ body {
   font-size: 1em;
 }
 
+.header-desktop {
+  display: none;
+}
+
 .logo-image {
   width: 36%;
   padding: 10px 0;
 }
 
-.hero-container, .hero-image {
+.hero-desktop {
+  display: none;
+}
+
+.hero-container, .hero-mobile {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -30,7 +38,7 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: .3em;
-  font-size: 2.25em;
+  font-size: 2.5em;
   font-weight: 300;
   color: #c7a0a1;
   padding-top: 30px;
@@ -60,13 +68,85 @@ input[type=text] {
   color: #c7a0a1;
   border-radius: 50px;
   font-weight: 300;
-  width: 245px;
+  width: 225px;
   padding: 10px 0 10px 20px;
 }
  
 button {
   border-radius: 50px;
-  width: 60px;
+  width: 50px;
   background: linear-gradient(hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   border: none;
+}
+
+/*****Desktop & Tablet Styles*****/
+@media only screen and (min-width: 1440px) {
+
+  body {
+    background: url('../images/bg-pattern-desktop.svg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-mobile {
+    display: none;
+  }
+
+  .header-desktop {
+    display: inline;
+  }
+
+  .logo-desktop {
+    margin: 10px;
+    padding: 20px 0 40px 0;
+  }
+
+  .logo-image-desktop {
+    width: 80px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .container {
+    width: 83%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 115px 70px;
+    background-color: white;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .hero-mobile {
+    display: none;
+  }
+
+  .hero-desktop {
+    display: inline;
+    height: 415px;
+  }
+
+  main {
+    display: 415px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 85px;
+  }
+
+  h1, p {
+    text-align: left;
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .form {
+    padding: 10px 0;
+  }
 }
