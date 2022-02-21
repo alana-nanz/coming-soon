@@ -1,0 +1,72 @@
+html {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  height: 100%;
+}
+
+body {
+  font-size: 1em;
+}
+
+.logo-image {
+  width: 36%;
+  padding: 10px 0;
+}
+
+.hero-container, .hero-image {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  font-size: 2.25em;
+  font-weight: 300;
+  color: #c7a0a1;
+  padding-top: 30px;
+}
+
+span {
+  font-weight: 700;
+  color: #3b3535;
+}
+
+p {
+  text-align: center;
+  color: #c7a0a1;
+  width: 70%;
+  line-height: 1.5em;
+  padding-bottom: 20px;
+}
+
+.form {
+  padding-bottom: 75px;
+  display: flex;
+}
+
+input[type=text] {
+  border: 1px solid #c7a0a1;
+  width: 100%;
+  color: #c7a0a1;
+  border-radius: 50px;
+  font-weight: 300;
+  width: 245px;
+  padding: 10px 0 10px 20px;
+}
+ 
+button {
+  border-radius: 50px;
+  width: 60px;
+  background: linear-gradient(hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border: none;
+}
