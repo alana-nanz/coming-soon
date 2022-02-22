@@ -69,7 +69,7 @@ input[type=text] {
   border-radius: 50px;
   font-weight: 300;
   width: 225px;
-  padding: 10px 0 10px 20px;
+  padding: 5px 0 5px 10px;
 }
  
 button {
@@ -98,21 +98,26 @@ button {
     display: inline;
   }
 
+  .hero-container {
+    height: 415px;
+  }
+
   .logo-desktop {
-    margin: 10px;
-    padding: 20px 0 40px 0;
+    margin: 0;
+    padding: 20px 0 50px 0;
   }
 
   .logo-image-desktop {
-    width: 80px;
+    width: 100px;
     padding: 0;
     margin: 0;
   }
 
   .container {
-    width: 83%;
+    width: 750px;
+    height: 415px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 115px 70px;
+    margin: 115px 0;
     background-color: white;
     display: flex;
     flex-direction: row-reverse;
@@ -128,25 +133,30 @@ button {
   }
 
   main {
-    display: 415px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-left: 85px;
+    padding-left: 75px;
   }
 
   h1, p {
     text-align: left;
-    padding: 10px 0;
-    margin: 0;
+    padding: 0;
+    margin: 0 0 15px 0;
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 1.75em;
+  }
+
+  p {
+    width: 85%;
+    font-size: 0.9em;
   }
 
   .form {
-    padding: 10px 0;
+    padding: 0;
+    margin: 0;
   }
 }
