@@ -35,8 +35,8 @@ design/screenshot-desktop.jpg
 
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0/hub/coming-soon-page-with-email-validation-form-TdIXqLEz2
+- Live Site URL: https://alana-nanz.github.io/coming-soon/
 
 ## My process
 
