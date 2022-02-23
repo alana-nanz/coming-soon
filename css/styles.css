@@ -60,9 +60,10 @@ p {
 .form {
   padding-bottom: 75px;
   display: flex;
+  position: relative;
 }
 
-input[type=text] {
+input[type=email] {
   border: 1px solid #c7a0a1;
   width: 100%;
   color: #c7a0a1;
@@ -70,6 +71,11 @@ input[type=text] {
   font-weight: 300;
   width: 225px;
   padding: 5px 0 5px 10px;
+  position: relative;
+}
+
+input[type=email]:focus{
+  outline: 1px solid #ff615e;;     
 }
  
 button {
@@ -77,10 +83,20 @@ button {
   width: 50px;
   background: linear-gradient(hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   border: none;
+  position: absolute;
+  left: 187px;
+  height: 30px;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2);
+}
+
+#response {
+  color: #ff615e;
+  font-size: 0.75em;
+  margin: 10px;
 }
 
 /*****Desktop & Tablet Styles*****/
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 768px) {
 
   body {
     background: url('../images/bg-pattern-desktop.svg');
