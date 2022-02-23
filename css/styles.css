@@ -57,10 +57,19 @@ p {
   padding-bottom: 20px;
 }
 
+.form-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
 .form {
   padding-bottom: 75px;
   display: flex;
   position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 input[type=email] {
@@ -75,7 +84,8 @@ input[type=email] {
 }
 
 input[type=email]:focus{
-  outline: 1px solid #ff615e;;     
+  outline: 1px solid #ff615e;
+  color: #3b3535;
 }
  
 button {
@@ -89,10 +99,26 @@ button {
   box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2);
 }
 
+#error {
+  position: absolute;
+  left: 160px;
+  top: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 #response {
   color: #ff615e;
   font-size: 0.75em;
   margin: 10px;
+}
+
+.error {
+  content: url('../images/icon-error.svg');
+  width: 20px;
 }
 
 /*****Desktop & Tablet Styles*****/
@@ -169,6 +195,10 @@ button {
   p {
     width: 85%;
     font-size: 0.9em;
+  }
+
+  .form-container {
+    margin-bottom: 0;
   }
 
   .form {
